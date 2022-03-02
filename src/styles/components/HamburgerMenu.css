@@ -73,3 +73,10 @@
   -ms-transform: rotateZ(-45deg) translateY(-20px);
   -o-transform: rotateZ(-45deg) translateY(-20px);
 }
+
+/* Hide On Larger Devices */
+@media only screen and (min-width: 577px) {
+  .hamburger__menu__container {
+    display: none;
+  }
+}

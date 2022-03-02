@@ -15,7 +15,7 @@ function Navigation() {
       {/* Mobile Menu */}
 
       {/* Main Menu */}
-      {/* <MainMenu /> */}
+      <MainMenu />
       {/* Main Menu */}
     </section>
   );

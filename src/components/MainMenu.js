@@ -1,24 +1,47 @@
 import React from "react";
 
+// Import Style
+import "../styles/components/MainMenu.css";
+
 function MainMenu() {
   return (
-    <nav>
+    <nav className="main__menu__container">
       <ul>
-        <li>
-          <a>Home</a>
-        </li>
+        <div>
+          <li>
+            <a href="/" className="main__menu__link">
+              Home
+            </a>
+          </li>
+          <div className="main__menu__border"></div>
+        </div>
 
-        <li>
-          <a>About</a>
-        </li>
+        <div>
+          <li>
+            <a href="/" className="main__menu__link">
+              About
+            </a>
+          </li>
+          <div className="main__menu__border"></div>
+        </div>
 
-        <li>
-          <a>Projects</a>
-        </li>
+        <div>
+          <li>
+            <a href="/" className="main__menu__link">
+              Projects
+            </a>
+          </li>
+          <div className="main__menu__border"></div>
+        </div>
 
-        <li>
-          <a>Contact</a>
-        </li>
+        <div>
+          <li>
+            <a href="/" className="main__menu__link">
+              Contact
+            </a>
+          </li>
+          <div className="main__menu__border"></div>
+        </div>
       </ul>
     </nav>
   );
