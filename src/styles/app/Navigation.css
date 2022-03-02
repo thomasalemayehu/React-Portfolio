@@ -1,0 +1,34 @@
+.navigation__menu__container {
+  background-color: red;
+  height: 55px;
+}
+
+@media only screen and (max-width: 576px) {
+  .navigation__menu__container {
+    height: 55px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .navigation__menu__container {
+    height: 55px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navigation__menu__container {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navigation__menu__container {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .navigation__menu__container {
+    height: 60px;
+  }
+}
