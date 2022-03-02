@@ -6,7 +6,7 @@ import "../styles/components/HamburgerMenu.css";
 function HamburgerMenu() {
   return (
     <nav className="hamburger__menu__container">
-      <label for="check">
+      <label htmlFor="check">
         <input type="checkbox" id="check" />
         <span></span>
         <span></span>
