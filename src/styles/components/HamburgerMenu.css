@@ -9,11 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 65px;
+  width: 60px;
   cursor: pointer;
   overflow: hidden;
-
-  background-color: palegoldenrod;
 }
 
 .hamburger__menu__container label span {
@@ -21,11 +19,11 @@
   border-radius: 10px;
   height: 5px;
   margin: 5px 0;
-  transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  -webkit-transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  -moz-transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  -ms-transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  -o-transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -webkit-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -moz-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -ms-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -o-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .hamburger__menu__container span:nth-of-type(1) {
@@ -58,11 +56,11 @@
 .hamburger__menu__container
   input[type="checkbox"]:checked
   ~ span:nth-of-type(2) {
-  transform: translateX(-180%);
-  -webkit-transform: translateX(-180%);
-  -moz-transform: translateX(-180%);
-  -ms-transform: translateX(-180%);
-  -o-transform: translateX(-180%);
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -ms-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
 }
 
 .hamburger__menu__container
