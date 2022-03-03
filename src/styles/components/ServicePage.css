@@ -1,5 +1,146 @@
-.s {
-  height: 100vh;
+.services__container {
+  color: var(--primary-color);
+}
+.services__container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.services__card__container {
+  width: 100%;
+  padding: 15px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.services__card {
+  padding-top: 18px;
+  position: relative;
+  background-color: #2b2b2b;
+  width: 400px;
+  height: 320px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 4px 60px black;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.services__card h3 {
+  padding: 10px 24px;
+}
+.services__card__icon__container {
+  margin: 10px 24px;
+  width: 100px;
+  height: 100px;
   background-color: yellow;
+  margin-bottom: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.services__card:nth-of-type(1) .services__card__icon__container {
+  background-color: #56ce72;
+}
+.services__card__icon__container img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+}
+.services__card__text {
+  line-height: 1.5;
+  padding: 10px 24px;
+}
+.services__card__border {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.services__card:nth-of-type(1) .services__card__border {
+  /* background-color: #e31f71; */
+  /* background-color: #d1345b; */
+  background-color: #b7245c;
+  /* background-color: #3454d1; */
+}
+.services__card:nth-of-type(2) .services__card__border {
+  /* background-color: #8838b4; */
+  /* background-color: #fdca40; */
+  /* background-color: #fdca40; */
+  background-color: #3454d1;
+}
+.services__card:nth-of-type(3) .services__card__border {
+  background-color: #faa916;
+  /* background-color: #ddfc74; */
+  /* background-color: #56e39f; */
+}
+.services__card:nth-of-type(4) .services__card__border {
+  background-color: #20bf55;
+
+  /* background-color: #3772ff; */
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .services__card {
+    width: 500px;
+    height: 290px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .services__card {
+    width: 510px;
+    height: 290px;
+  }
+
+  .services__card:nth-of-type(1),
+  .services__card:nth-of-type(3) {
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .services__card {
+    width: 510px;
+    height: 300px;
+  }
+
+  .services__card:nth-of-type(1),
+  .services__card:nth-of-type(3) {
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .services__card {
+    width: 470px;
+    height: 320px;
+  }
+
+  .services__card:nth-of-type(1),
+  .services__card:nth-of-type(2),
+  .services__card:nth-of-type(3) {
+    margin-right: 45px;
+  }
+}
+
+/* Service card hover */
+.services__card:hover {
+  background-color: var(--primary-color);
   color: black;
 }

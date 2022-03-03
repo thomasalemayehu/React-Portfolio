@@ -22,7 +22,7 @@ function LandingPage() {
       <img
         src="/assets/image/landing-page-image3.png"
         className="landing__page__right"
-        alt=""
+        alt="A fun animation of me"
       />
     </section>
   );

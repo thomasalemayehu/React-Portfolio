@@ -67,7 +67,7 @@ function AboutPage() {
           <div className="about__page__border"></div>
           <img
             src="./assets/image/my-image.jpg"
-            alt=""
+            alt="Thomas Alemayehu"
             className="about__page__image"
           />
         </div>
