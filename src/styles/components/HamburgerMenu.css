@@ -3,6 +3,8 @@
   justify-content: flex-end;
   margin: 0 20px 0 auto;
   padding-top: 12px;
+  position: fixed;
+  right: 0;
 }
 
 .hamburger__menu__container label {
