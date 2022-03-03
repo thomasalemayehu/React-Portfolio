@@ -37,7 +37,18 @@
   font-weight: 600;
   letter-spacing: 0.55px;
 }
-
+.main__menu__cta__button {
+  background-color: var(--primary-color);
+  padding: 8px 32px;
+  margin: 0 16px 0 32px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 /* Targeting on hover */
 
 /* Hide On Smaller Devices */

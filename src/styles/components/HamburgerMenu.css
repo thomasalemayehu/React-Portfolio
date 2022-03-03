@@ -1,8 +1,8 @@
 .hamburger__menu__container {
   display: flex;
   justify-content: flex-end;
-  margin: 0 12px 0 auto;
-  padding-top: 5px;
+  margin: 0 20px 0 auto;
+  padding-top: 12px;
 }
 
 .hamburger__menu__container label {
@@ -15,7 +15,7 @@
 }
 
 .hamburger__menu__container label span {
-  background: #fff;
+  background: var(--primary-color);
   border-radius: 10px;
   height: 5px;
   margin: 5px 0;

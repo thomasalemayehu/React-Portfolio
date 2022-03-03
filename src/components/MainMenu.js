@@ -6,13 +6,12 @@ import "../styles/components/MainMenu.css";
 function MainMenu() {
   function animateMainMenuHoverBorder(e) {
     const borderElement = e.target.parentElement.parentElement.children[1];
-    borderElement.style.width == "100%"
+    borderElement.style.width === "100%"
       ? (borderElement.style.width = "0%")
       : (borderElement.style.width = "100%");
   }
   return (
     <nav className="main__menu__container">
-      <div id="test">hello</div>
       <ul>
         <div>
           <li>
@@ -50,7 +49,7 @@ function MainMenu() {
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
             >
-              Projects
+              Services
             </a>
           </li>
           <div className="main__menu__border"></div>
@@ -64,12 +63,16 @@ function MainMenu() {
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
             >
-              Contact Me
+              Projects
             </a>
           </li>
           <div className="main__menu__border"></div>
         </div>
       </ul>
+
+      <a href="" className="main__menu__cta__button">
+        Hire Me
+      </a>
     </nav>
   );
 }
