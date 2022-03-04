@@ -1,5 +1,7 @@
 .navigation__menu__container {
   height: 55px;
+  font-family: "Vollkorn" !important;
+  font-weight: 100 !important;
 }
 
 @media only screen and (max-width: 576px) {

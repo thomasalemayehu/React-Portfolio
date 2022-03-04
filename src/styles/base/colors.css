@@ -1,7 +1,10 @@
 :root {
   --main-body-color: black;
-  --primary-color: #00ffbb;
+  /* --primary-color: #00ffbb; */
+  --primary-color: #fce762;
   --secondary-color: #f87060;
-  --primary-highlight-color: #662e9b;
+  --primary-highlight-color: ;
   --secondary-highlight-color: #ffee88;
 }
+
+/*  */
