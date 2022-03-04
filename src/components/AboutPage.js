@@ -83,7 +83,7 @@ function AboutPage() {
             achieving best result on each project I lay my hands on.
           </p>
           <a href="./assets/docs/Thomas Alemayehu CV.pdf" download>
-            Download my cv
+            Download my CV
           </a>
         </div>
       </div>
@@ -95,20 +95,27 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">Born Day 🎂</h1>
-            <p className="experiance-page-timeline-time">
-              February 14th , 2000
-            </p>
-            <p className="experiance-page-timeline-content"></p>
+            <h1 className="timeline__title">Born Day🎂</h1>
+            <p className="timeline__time__span">February 14th , 2000</p>
+            <p className="timeline__content"></p>
           </div>
         </div>
 
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">Hill Side School</h1>
-            <p className="experiance-page-timeline-time">2004 - 2018</p>
-            <p className="experiance-page-timeline-content">
+            <h1 className="timeline__title">Doing Stuff👶</h1>
+            <p className="timeline__time__span">2000 - 2004</p>
+            <p className="timeline__content"></p>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="bead"></div>
+          <div className="content">
+            <h1 className="timeline__title">Hill Side School</h1>
+            <p className="timeline__time__span">2004 - 2018</p>
+            <p className="timeline__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               labore ducimus modi magnam, magni inventore ratione quasi eaque
               officiis, sunt ipsam nemo, est qui accusantium dolore itaque
@@ -120,11 +127,11 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">
+            <h1 className="timeline__title">
               Meseret Humanitarian Organization
             </h1>
-            <p className="experiance-page-timeline-time">2017 - 2018</p>
-            <p className="experiance-page-timeline-content">
+            <p className="timeline__time__span">2017 - 2018</p>
+            <p className="timeline__content">
               Part of a group that sold tickets as donation and collected in
               kind donations for the “One Pack for One Child” Project, preparing
               school essential packs for children of economically weak families.
@@ -135,11 +142,9 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">
-              Nehemiah Autism Centre
-            </h1>
-            <p className="experiance-page-timeline-time">2018 - 2019</p>
-            <p className="experiance-page-timeline-content">
+            <h1 className="timeline__title">Nehemiah Autism Centre</h1>
+            <p className="timeline__time__span">2018 - 2019</p>
+            <p className="timeline__content">
               Spend some time with autistic children. Teach them to adapt to new
               people, improve communication with people and learn to focus and
               read.
@@ -150,11 +155,9 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">
-              Jersuma Trading P.L.C
-            </h1>
-            <p className="experiance-page-timeline-time">2018 - Present</p>
-            <p className="experiance-page-timeline-content">
+            <h1 className="timeline__title">Jersuma Trading P.L.C</h1>
+            <p className="timeline__time__span">2018 - Present</p>
+            <p className="timeline__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               labore ducimus modi magnam, magni inventore ratione quasi eaque
               officiis, sunt ipsam nemo, est qui accusantium dolore itaque
@@ -166,11 +169,11 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">
+            <h1 className="timeline__title">
               Addis Ababa Institute of Technology
             </h1>
-            <p className="experiance-page-timeline-time">2019 - Present</p>
-            <p className="experiance-page-timeline-content">
+            <p className="timeline__time__span">2019 - Present</p>
+            <p className="timeline__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               labore ducimus modi magnam, magni inventore ratione quasi eaque
               officiis, sunt ipsam nemo, est qui accusantium dolore itaque
@@ -182,9 +185,9 @@ function AboutPage() {
         <div className="section">
           <div className="bead"></div>
           <div className="content">
-            <h1 className="experiance-page-timeline-title">Gebeya Talent</h1>
-            <p className="experiance-page-timeline-time">2021 - Present</p>
-            <p className="experiance-page-timeline-content">
+            <h1 className="timeline__title">Gebeya Talent</h1>
+            <p className="timeline__time__span">2021 - Present</p>
+            <p className="timeline__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               labore ducimus modi magnam, magni inventore ratione quasi eaque
               officiis, sunt ipsam nemo, est qui accusantium dolore itaque

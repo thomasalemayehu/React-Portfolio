@@ -26,8 +26,6 @@ function HamburgerMenu() {
           "hamburger--mobile--menu--active"
         );
       }
-
-      // make body scrollable
     } else {
       mobileMenuElement.classList.add("mobile--menu--activate");
 

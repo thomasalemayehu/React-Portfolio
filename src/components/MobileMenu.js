@@ -42,6 +42,7 @@ function MobileMenu() {
         hamburgerElements[i].classList.add("hamburger--mobile--menu--active");
       }
     }
+
     document.getElementById("check").checked = false;
   }
   return (
