@@ -1,1 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+@font-face {
+  font-family: "SF Mono";
+  src: url("../../../public/assets/fonts/SF-Mono/SFMonoRegular.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../public/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../../public/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../../public/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}

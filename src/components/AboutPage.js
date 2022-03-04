@@ -20,15 +20,12 @@ function AboutPage() {
     let set = 0;
     const targetY = window.innerHeight * 0.8;
 
-    function scrollHandler(e) {
+    function scrollHandler() {
       const { scrollY } = window;
       up = scrollY < prevScrollY;
       down = !up;
       const timelineRect = timeline.getBoundingClientRect();
-      const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
-
       const dist = targetY - timelineRect.top;
-      console.log(dist);
 
       if (down && !full) {
         set = Math.max(set, dist);
@@ -41,13 +38,12 @@ function AboutPage() {
       }
 
       sections.forEach((item) => {
-        // console.log(item);
-        const rect = item.getBoundingClientRect(); //     console.log(rect);
+        const rect = item.getBoundingClientRect();
 
         if (rect.top + item.offsetHeight / 5 < targetY) {
           item.classList.add("show-me");
         }
-      }); // console.log(up, down);
+      });
 
       prevScrollY = window.scrollY;
     }
@@ -86,7 +82,9 @@ function AboutPage() {
             hardworking and result oriented lady, I always work towards
             achieving best result on each project I lay my hands on.
           </p>
-          <a href="">Download my cv</a>
+          <a href="./assets/docs/Thomas Alemayehu CV.pdf" download>
+            Download my cv
+          </a>
         </div>
       </div>
 

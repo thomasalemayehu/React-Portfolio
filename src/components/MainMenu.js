@@ -16,7 +16,7 @@ function MainMenu() {
         <div>
           <li>
             <a
-              href="/"
+              href="#HomePage"
               className="main__menu__link"
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
@@ -30,7 +30,7 @@ function MainMenu() {
         <div>
           <li>
             <a
-              href="/"
+              href="#AboutPage"
               className="main__menu__link"
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
@@ -44,7 +44,7 @@ function MainMenu() {
         <div>
           <li>
             <a
-              href="/"
+              href="#ServicesPage"
               className="main__menu__link"
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
@@ -58,7 +58,7 @@ function MainMenu() {
         <div>
           <li>
             <a
-              href="/"
+              href="#ProjectsPage"
               className="main__menu__link"
               onMouseEnter={(e) => animateMainMenuHoverBorder(e)}
               onMouseLeave={(e) => animateMainMenuHoverBorder(e)}
@@ -70,7 +70,7 @@ function MainMenu() {
         </div>
       </ul>
 
-      <a href="" className="main__menu__cta__button">
+      <a href="#ContactPage" className="main__menu__cta__button">
         Hire Me
       </a>
     </nav>
