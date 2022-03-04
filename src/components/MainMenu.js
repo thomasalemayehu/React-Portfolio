@@ -71,7 +71,7 @@ function MainMenu() {
       </ul>
 
       <a href="#ContactPage" className="main__menu__cta__button">
-        Hire Me
+        Contact Me
       </a>
     </nav>
   );

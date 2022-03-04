@@ -14,7 +14,7 @@ function LandingPage() {
           I am a full stack developer with great eye for design and optimized
           backend based in Addis Ababa.
         </p>
-        <a href="">Hire me</a>
+        <a href="#ContactPage">Hire Me</a>
       </div>
 
       {/* Right Section */}

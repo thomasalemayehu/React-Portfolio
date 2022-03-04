@@ -3,6 +3,7 @@ import React from "react";
 // Import Components
 import HamburgerMenu from "../components/HamburgerMenu";
 import MainMenu from "../components/MainMenu";
+import MobileMenu from "../components/MobileMenu";
 
 // Import Style
 import "../styles/app/Navigation.css";
@@ -17,6 +18,9 @@ function Navigation() {
       {/* Main Menu */}
       <MainMenu />
       {/* Main Menu */}
+
+      {/* Mobile Menu */}
+      <MobileMenu />
     </section>
   );
 }

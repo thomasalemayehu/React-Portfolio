@@ -4,7 +4,7 @@ import "../styles/components/ProjectPage.css";
 
 function ProjectPage() {
   return (
-    <h1 className="p" id="p">
+    <h1 className="p" id="ProjectsPage">
       Projects
     </h1>
   );
