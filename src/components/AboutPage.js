@@ -61,11 +61,11 @@ function AboutPage() {
         {/* Left Content */}
         <div className="about__page__left">
           <div className="about__page__border"></div>
-          {/* <img
+          <img
             src="./assets/image/my-image.jpg"
             alt="Thomas Alemayehu"
             className="about__page__image"
-          /> */}
+          />
         </div>
         {/* Right Content */}
         <div className="about__page__right">
