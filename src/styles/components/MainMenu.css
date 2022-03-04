@@ -39,7 +39,7 @@
 
 .main__menu__container ul a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-text-color);
   font-size: 15px;
   font-family: "Raleway";
   font-size: 0.9em;
@@ -54,7 +54,7 @@
 }
 .main__menu__cta__button {
   background-color: var(--primary-color);
-  padding: 8px 32px;
+  padding: 8px 24px;
   margin: 0 16px 0 32px;
   text-decoration: none;
   color: black;

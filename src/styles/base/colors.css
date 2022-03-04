@@ -1,10 +1,16 @@
 :root {
+  /* Background Colors */
   --main-body-color: #0a192f;
-  /* --primary-color: #00ffbb; */
+
+  /* Text & Highlight Colors */
   --primary-color: #fce762;
+
   --secondary-color: #f87060;
   --primary-highlight-color: ;
   --secondary-highlight-color: #ffee88;
+
+  /* Text Colors */
+  --primary-text-color: rgba(255, 255, 255, 0.8);
 }
 
 /*  */
