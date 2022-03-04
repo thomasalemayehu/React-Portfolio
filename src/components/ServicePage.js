@@ -11,7 +11,7 @@ function ServicePage() {
         <div className="services__card">
           <div className="services__card__icon__container">
             <img
-              src="./assets/image/full_stack.svg"
+              src="./assets/image/full-stack.svg"
               alt="Full Stack Developer"
             />
           </div>
@@ -26,7 +26,9 @@ function ServicePage() {
 
         {/* Card Two */}
         <div className="services__card">
-          <div className="services__card__icon__container">Icon</div>
+          <div className="services__card__icon__container">
+            <img src="./assets/image/web.svg" />
+          </div>
           <h3>Web Development</h3>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -38,7 +40,9 @@ function ServicePage() {
 
         {/* Card Three */}
         <div className="services__card">
-          <div className="services__card__icon__container">Icon</div>
+          <div className="services__card__icon__container">
+            <img src="./assets/image/mobile.svg" />
+          </div>
           <h3>Mobile Development</h3>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -50,7 +54,9 @@ function ServicePage() {
 
         {/* Card Four */}
         <div className="services__card">
-          <div className="services__card__icon__container">Icon</div>
+          <div className="services__card__icon__container">
+            <img src="./assets/image/encryption.svg" />
+          </div>
           <h3>Security Analysis</h3>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae

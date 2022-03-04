@@ -36,7 +36,8 @@
 .about__page__right h3 {
   color: var(--primary-color);
   font-size: 2.2em;
-  font-family: "Roboto Mono";
+  font-family: "SF Mono";
+  letter-spacing: 2px;
 }
 .about__page__right p {
   padding-top: 16px;

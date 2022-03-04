@@ -71,16 +71,16 @@ function AboutPage() {
         <div className="about__page__right">
           <h3> About Me </h3>
           <p>
-            I’m Oluwakemi Adeleke, a professional and talented Product Designer
-            with front end development skills. I am passionate about leveraging
-            my diverse backgrounds to decipher challenging problems and create
-            delightful experiences. I honed my skills at web development,
-            technical writing, product design and SEO analytics. I develop
-            websites with HTML, CSS and JavaScript. I have top skills in using
-            design softwares like Figma, Adobe XD, Invision and PhotoShop; with
-            prototype tools like Framer and Protopie. Being a diligent,
-            hardworking and result oriented lady, I always work towards
-            achieving best result on each project I lay my hands on.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi.
           </p>
           <a href="./assets/docs/Thomas Alemayehu CV.pdf" download>
             Download my CV
