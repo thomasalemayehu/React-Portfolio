@@ -1,11 +1,12 @@
 .landing__page__container {
-  height: 96vh;
+  min-height: 96vh;
   padding: 80px 28px;
   padding-bottom: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: red;
 }
 
 .landing__page__left {
