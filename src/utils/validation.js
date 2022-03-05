@@ -1,10 +1,15 @@
-import DOMPurify from "dompurify";
+import { init } from "@emailjs/browser";
+import emailjs from "emailjs-com";
+init("gTool4GJ057LvqAfd");
+
 function formValidator() {
   /*
         ========================================
         First Name Validation
         ========================================
     */
+
+  const firstName = document.getElementById("FirstName").value;
   const firstNameValidate = validateName(
     "FirstName",
     "FirstNameErrorMessage",
@@ -17,7 +22,8 @@ function formValidator() {
         ========================================
     */
   var lastNameValidate = true;
-  if (document.getElementById("LastName").value) {
+  const lastName = document.getElementById("LastName").value;
+  if (lastName) {
     lastNameValidate = validateName(
       "LastName",
       "LastNameErrorMessage",
@@ -30,6 +36,7 @@ function formValidator() {
         Email Validation
         ========================================
     */
+  const email = document.getElementById("Email").value;
   const emailValidate = validateEmail("Email", "EmailErrorMessage");
 
   /*
@@ -38,7 +45,8 @@ function formValidator() {
         ========================================
     */
   var subjectValidate = true;
-  if (document.getElementById("Subject").value) {
+  const subject = document.getElementById("Subject").value;
+  if (subject) {
     subjectValidate = validateText(
       "Subject",
       "SubjectErrorMessage",
@@ -52,6 +60,7 @@ function formValidator() {
         Message Validation
         ========================================
     */
+  const message = document.getElementById("Message").value;
   var messageValidate = validateText(
     "Message",
     "MessageErrorMessage",
@@ -65,7 +74,8 @@ function formValidator() {
         ========================================
     */
   var phoneValidate = true;
-  if (document.getElementById("Phone").value) {
+  const phone = document.getElementById("Phone").value;
+  if (phone) {
     phoneValidate = validatePhone("Phone", "PhoneErrorMessage");
   }
 
@@ -85,6 +95,8 @@ function formValidator() {
     formElement.innerHTML = "";
     formElement.classList.remove("loader__container");
     formElement.appendChild(newLoaderElement);
+
+    sendEmail(firstName, lastName, email, phone, subject, message);
 
     setTimeout(() => {
       formElement.innerHTML = form;
@@ -197,4 +209,29 @@ function validatePhone(id, errorDisplayId) {
   return validationStatus;
 }
 
+async function sendEmail(firstName, lastName, email, phone, subject, message) {
+  var templateParams = {
+    name: firstName + lastName,
+    email: email,
+    phone: phone,
+    subject: subject,
+    message: message,
+  };
+
+  emailjs
+    .send(
+      "service_txkdaib",
+      "template_lwfl601",
+      templateParams,
+      "gTool4GJ057LvqAfd"
+    )
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+}
 export default formValidator;
