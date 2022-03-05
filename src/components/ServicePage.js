@@ -27,7 +27,7 @@ function ServicePage() {
         {/* Card Two */}
         <div className="services__card">
           <div className="services__card__icon__container">
-            <img src="./assets/image/web.svg" />
+            <img src="./assets/image/web.svg" alt="Web Developer" />
           </div>
           <h3>Web Development</h3>
           <p className="services__card__text">
@@ -41,7 +41,7 @@ function ServicePage() {
         {/* Card Three */}
         <div className="services__card">
           <div className="services__card__icon__container">
-            <img src="./assets/image/mobile.svg" />
+            <img src="./assets/image/mobile.svg" alt="Mobile Developer" />
           </div>
           <h3>Mobile Development</h3>
           <p className="services__card__text">
@@ -55,7 +55,7 @@ function ServicePage() {
         {/* Card Four */}
         <div className="services__card">
           <div className="services__card__icon__container">
-            <img src="./assets/image/encryption.svg" />
+            <img src="./assets/image/encryption.svg" alt="Security Analyst" />
           </div>
           <h3>Security Analysis</h3>
           <p className="services__card__text">

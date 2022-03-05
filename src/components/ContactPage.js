@@ -14,28 +14,30 @@ function ContactPage() {
     <section className="contact__container ">
       {/* Left Container */}
       <div className="contact__container__left">
-        <h2>get in touch</h2>
-        <p>
-          Fill up the form and I will get back to you as soon as possible! You
-          can find me on upwork and fiver as well.
-        </p>
-        {/* Email */}
-        <div className="contact__info__container">
-          <img src="./assets/image/location.svg" alt="Thomas's Location" />
+        <div>
+          <h2>get in touch</h2>
+          <p>
+            Fill up the form and I will get back to you as soon as possible! You
+            can find me on upwork and fiver as well.
+          </p>
+          {/* Email */}
+          <div className="contact__info__container">
+            <img src="./assets/image/location.svg" alt="Thomas's Location" />
 
-          <div>Addis Ababa, Ethiopia </div>
+            <div>Addis Ababa, Ethiopia </div>
 
-          <img src="./assets/image/Ethiopia.svg" alt="Ethiopian Flag" />
-        </div>
-        {/* Location */}
-        <div className="contact__info__container">
-          <img src="./assets/image/email.svg" alt="Thomas's Email" />
-          <div>thomas2alexmech@gmail.com</div>
-        </div>
-        {/* Phone Number */}
-        <div className="contact__info__container">
-          <img src="./assets/image/phone.svg" alt="Thomas's Phone" />
-          <div>Email me and you will get it😉</div>
+            <img src="./assets/image/Ethiopia.svg" alt="Ethiopian Flag" />
+          </div>
+          {/* Location */}
+          <div className="contact__info__container">
+            <img src="./assets/image/email.svg" alt="Thomas's Email" />
+            <div>thomas2alexmech@gmail.com</div>
+          </div>
+          {/* Phone Number */}
+          <div className="contact__info__container">
+            <img src="./assets/image/phone.svg" alt="Thomas's Phone" />
+            <div>Email me and you will get it😉</div>
+          </div>
         </div>
 
         {/* Socials */}
@@ -69,7 +71,9 @@ function ContactPage() {
             <img src="./assets/image/instagram.svg" alt="Instagram" />
           </a>
         </div>
-        <div className="contact__left__decoration"></div>
+
+        <div className="contact__decoration"></div>
+        <div className="contact__decoration_small"></div>
       </div>
 
       {/* Right Container */}
