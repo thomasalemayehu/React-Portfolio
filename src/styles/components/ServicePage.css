@@ -145,12 +145,12 @@
 
 @media only screen and (min-width: 1401px) {
   .services__card__container {
-    justify-content: space-between;
-    padding: 0 3%;
+    justify-content: space-evenly;
+    padding: 0 5%;
   }
   .services__card {
-    width: 40%;
-    height: 340px;
+    width: 35%;
+    min-height: 340px;
     margin-top: 100px;
   }
 }
