@@ -2,95 +2,149 @@ import React from "react";
 
 import "../styles/components/ContactPage.css";
 
+// Import Util
+import "../utils/validation";
+import formValidator from "../utils/validation";
+
 function ContactPage() {
+  function handleFormSubmission() {
+    formValidator();
+  }
   return (
     <section className="contact__container ">
-      <h2>Contact Me</h2>
-      <div className="contact__container__inner" id="ContactPage">
-        {/* Form */}
-        <form className="contact__form__container">
-          {/* Full Name */}
-          <div className="did-floating-label-content">
-            <input className="did-floating-input" type="text" name="FullName" />
-            <label className="did-floating-label" htmlFor="FullName">
-              Full Name
-            </label>
-          </div>
-
-          {/* Email */}
-          <div className="did-floating-label-content">
-            <input className="did-floating-input" type="text" name="Email" />
-            <label className="did-floating-label" htmlFor="Email">
-              Email*
-            </label>
-          </div>
-
-          {/* Subject */}
-          <div className="did-floating-label-content">
-            <input className="did-floating-input" type="text" name="Subject" />
-            <label className="did-floating-label" htmlFor="Subject">
-              Subject{" "}
-            </label>
-          </div>
-
-          {/* Message */}
-          <div className="did-floating-label-content">
-            <input className="did-floating-input" type="text" name="Message" />
-            <label className="did-floating-label" htmlFor="Message">
-              Message{" "}
-            </label>
-          </div>
-
-          <div className="contact__form__submit__button">Send Email</div>
-        </form>
-
-        {/* Info */}
+      {/* Left Container */}
+      <div className="contact__container__left">
+        <h2>get in touch</h2>
+        <p>
+          Fill up the form and I will get back to you as soon as possible! You
+          can find me on upwork and fiver as well.
+        </p>
+        {/* Email */}
         <div className="contact__info__container">
-          <h4>Get In Touch</h4>
+          <img src="./assets/image/location.svg" alt="Thomas's Location" />
 
-          <p>
-            Dropping a line to say g’day, ask for my resume or see if we can
-            build something amazing together? I’d love to hear from you!
-          </p>
+          <div>Addis Ababa, Ethiopia </div>
 
-          <p>
-            Fill in your info in the form below and I look forward to hearing
-            from you!
-          </p>
+          <img src="./assets/image/Ethiopia.svg" alt="Ethiopian Flag" />
+        </div>
+        {/* Location */}
+        <div className="contact__info__container">
+          <img src="./assets/image/email.svg" alt="Thomas's Email" />
+          <div>thomas2alexmech@gmail.com</div>
+        </div>
+        {/* Phone Number */}
+        <div className="contact__info__container">
+          <img src="./assets/image/phone.svg" alt="Thomas's Phone" />
+          <div>Email me and you will get it😉</div>
+        </div>
 
-          <div className="contact__info">
-            <div className="contact__info__inner__container">
-              {/* Location */}
-              <div className="container-row">
-                <div className="contact__info__icon">
-                  <img src="./assets/image/location.svg" alt="Location" />
-                </div>
+        {/* Socials */}
+        <div className="contact__socials__container">
+          <a
+            href="https://github.com/thomasalemayehu"
+            target="__blank"
+            className="contact__socials"
+          >
+            <img src="./assets/image/github.svg" alt="Github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/thomas-alemayehu-a61675204/"
+            target="__blank"
+            className="contact__socials"
+          >
+            <img src="./assets/image/linkedin.svg" alt="Linkedin" />
+          </a>
+          <a
+            href="https://twitter.com/thomas_alemayeh"
+            target="__blank"
+            className="contact__socials"
+          >
+            <img src="./assets/image/twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            target="__blank"
+            className="contact__socials"
+          >
+            <img src="./assets/image/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+        <div className="contact__left__decoration"></div>
+      </div>
 
-                <div className="contact__info__text">Addis Ababa, Ethiopia</div>
-              </div>
+      {/* Right Container */}
+      <form className="contact__container__right">
+        <h2>Our very own smoke signal!</h2>
+        <div className="container-row justify-space-between">
+          {/* First Name */}
+          <div className="container-col w45">
+            <label htmlFor="FirstName" className="contact__form__label">
+              First Name <span>*</span>
+            </label>
+            <input type="text" name="FirstName" id="FirstName" />
+            <span id="FirstNameErrorMessage">Message</span>
+          </div>
 
-              {/* Email */}
-              <div className="container-row">
-                <div className="contact__info__icon">
-                  <img src="./assets/image/email.svg" alt="Email" />
-                </div>
-                <div className="contact__info__text">
-                  thomas2alexmech@gmail.com
-                </div>
-              </div>
-
-              {/* Phone Number */}
-              <div className="container-row">
-                <div className="contact__info__icon">
-                  <img src="./assets/image/phone.svg" alt="Phone Number" />
-                </div>
-
-                <div className="contact__info__text">+251-911-00-00-00</div>
-              </div>
-            </div>
+          {/* Last Name */}
+          <div className="container-col w45">
+            <label htmlFor="LastName" className="contact__form__label">
+              Last Name
+            </label>
+            <input type="text" name="LastName" id="LastName" />
+            <span id="LastNameErrorMessage">Message</span>
           </div>
         </div>
-      </div>
+
+        <div className="container-row justify-space-between margin-top-50">
+          {/* Email */}
+          <div className="container-col w45">
+            <label htmlFor="Email" className="contact__form__label">
+              Email <span>*</span>
+            </label>
+            <input type="text" name="Email" id="Email" />
+
+            <span id="EmailErrorMessage">Message</span>
+          </div>
+
+          {/* Phone Number */}
+          <div className="container-col w45">
+            <label htmlFor="Phone" className="contact__form__label">
+              Phone
+            </label>
+            <input type="number" name="Phone" id="Phone" />
+
+            <span id="PhoneErrorMessage">Message</span>
+          </div>
+        </div>
+
+        {/* Subject */}
+        <div className="container-col margin-top-50">
+          <label htmlFor="Subject" className="contact__form__label">
+            Subject
+          </label>
+
+          <input type="text" name="Subject" id="Subject" />
+          <span id="SubjectErrorMessage">Message</span>
+        </div>
+
+        {/* Message */}
+        <div className="container-col margin-top-50">
+          <label htmlFor="Message" className="contact__form__label">
+            Message <span>*</span>
+          </label>
+
+          <input type="text" name="Message" id="Message" />
+          <span id="MessageErrorMessage">Message</span>
+        </div>
+
+        {/* Submit Button */}
+        <div
+          className="contact__form__submit__button"
+          onClick={handleFormSubmission}
+        >
+          Send
+        </div>
+      </form>
     </section>
   );
 }
