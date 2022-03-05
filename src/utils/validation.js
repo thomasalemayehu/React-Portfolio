@@ -211,7 +211,7 @@ function validatePhone(id, errorDisplayId) {
 
 async function sendEmail(firstName, lastName, email, phone, subject, message) {
   var templateParams = {
-    name: firstName + lastName,
+    name: firstName + " " + lastName,
     email: email,
     phone: phone,
     subject: subject,
