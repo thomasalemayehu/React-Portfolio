@@ -9,7 +9,7 @@ function LandingPage() {
       <div className="landing__page__left">
         <p>Howdy-doody!🙃 I'm</p>
         <h1>Thomas Alemayehu.</h1>
-        <h5>Full Stack developer & Security Analyst</h5>
+        <h2>Full Stack developer & Security Analyst</h2>
         <p>
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on

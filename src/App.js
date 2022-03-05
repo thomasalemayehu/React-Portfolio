@@ -4,9 +4,6 @@ import Navigation from "./app/Navigation";
 
 function App() {
   document.body.style.zoom = "0%";
-  let zoom = ((window.outerWidth - 10) / window.innerWidth) * 100;
-
-  //
 
   return (
     <section className="app">

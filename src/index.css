@@ -27,7 +27,8 @@ html::-webkit-scrollbar-thumb {
 body {
   background-color: #0a192f;
   color: var(--primary-text-color);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
+
   overflow-x: hidden;
 }
 

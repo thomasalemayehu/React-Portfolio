@@ -26,7 +26,7 @@
   margin-bottom: 12px;
   font-family: "Roboto Mono";
 }
-.landing__page__left h5 {
+.landing__page__left h2 {
   font-size: 1.2em;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -58,6 +58,7 @@
 .landing__page__right {
   display: none;
   width: 30%;
+  height: auto;
   max-height: 600px;
   object-fit: contain;
 }
@@ -74,7 +75,7 @@
     font-size: 3.4em;
     letter-spacing: 2px;
   }
-  .landing__page__left h5 {
+  .landing__page__left h2 {
     font-size: 1.3rem;
   }
   .landing__page__left p:nth-of-type(2) {
