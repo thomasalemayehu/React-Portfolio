@@ -77,7 +77,18 @@ function formValidator() {
     subjectValidate &&
     messageValidate
   ) {
-    console.log("Submitting Form");
+    const formElement = document.getElementById("Form");
+    formElement.classList.add("loader__container");
+    const form = formElement.innerHTML;
+    const newLoaderElement = document.createElement("div");
+    newLoaderElement.className = "loader";
+    formElement.innerHTML = "";
+    formElement.classList.remove("loader__container");
+    formElement.appendChild(newLoaderElement);
+
+    setTimeout(() => {
+      formElement.innerHTML = form;
+    }, 6000);
   }
 }
 

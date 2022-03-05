@@ -77,7 +77,7 @@ function ContactPage() {
       </div>
 
       {/* Right Container */}
-      <form className="contact__container__right">
+      <form className="contact__container__right" id="Form">
         <h2>Our very own smoke signal!</h2>
         <div className="container-row justify-space-between">
           {/* First Name */}

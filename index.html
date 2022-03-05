@@ -7,53 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <a href="">
-      <div>Home</div>
-      <div id="test"></div>
-      <div id="test2"></div>
-    </a>
+    <div class="loader">Loading...</div>
   </body>
 
   <style>
-    a {
-      position: relative;
-      text-decoration: none;
-      color: black;
-      background-color: aqua;
-      display: flex;
-      width: 100px;
-      height: 32px;
-    }
-    a > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    a > div:nth-of-type(1) {
-      background-color: red;
-      /* z-index: 2; */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    a > div:nth-of-type(2) {
-      background-color: yellow;
-      width: 50%;
-      display: none;
-    }
-    a > div:nth-of-type(3) {
-      background-color: pink;
-      display: none;
-      width: 50%;
-      margin-left: auto;
-    }
-
-    a:hover #test,
-    a:hover #test2 {
-      display: inline;
+    body {
+      background-color: black;
     }
   </style>
 </html>
