@@ -1,11 +1,11 @@
-import DOMPurify from "dompurify"
+import DOMPurify from "dompurify";
 function formValidator() {
   /*
         ========================================
         First Name Validation
         ========================================
     */
-  const validFirstName = validateName(
+  const firstNameValidate = validateName(
     "FirstName",
     "FirstNameErrorMessage",
     "First name"
@@ -16,29 +16,69 @@ function formValidator() {
         Last Name Validation
         ========================================
     */
-  var validateLastName = true;
+  var lastNameValidate = true;
   if (document.getElementById("LastName").value) {
-    validateLastName = validateName(
+    lastNameValidate = validateName(
       "LastName",
       "LastNameErrorMessage",
       "Last name"
     );
   }
 
+  /*
+        ========================================
+        Email Validation
+        ========================================
+    */
   const emailValidate = validateEmail("Email", "EmailErrorMessage");
 
-  // Validate Email
-  //   const emailInput = document.getElementById("Email").value;
-  //   const emailErrorElement = document.getElementById("EmailErrorMessage");
-  // Validate Phone Number
-  //   const phoneNumberInput = document.getElementById("Phone").value;
-  //   const phoneNumberErrorElement = document.getElementById("PhoneErrorMessage");
-  // Validate Subject
-  //   const subjectInput = document.getElementById("Subject").value;
-  //   const subjectErrorElement = document.getElementById("SubjectErrorMessage");
-  // Validate Message
-  //   const messageInput = document.getElementById("Message").value;
-  //   const messageErrorElement = document.getElementById("MessageErrorMessage");
+  /*
+        ========================================
+        Subject Validation
+        ========================================
+    */
+  var subjectValidate = true;
+  if (document.getElementById("Subject").value) {
+    subjectValidate = validateText(
+      "Subject",
+      "SubjectErrorMessage",
+      6,
+      "Subject"
+    );
+  }
+
+  /*
+        ========================================
+        Message Validation
+        ========================================
+    */
+  var messageValidate = validateText(
+    "Message",
+    "MessageErrorMessage",
+    15,
+    "Message"
+  );
+
+  /*
+        ========================================
+        Phone Validation
+        ========================================
+    */
+  var phoneValidate = true;
+  if (document.getElementById("Phone").value) {
+    phoneValidate = validatePhone("Phone", "PhoneErrorMessage");
+  }
+
+  if (
+    firstNameValidate &&
+    lastNameValidate &&
+    emailValidate &&
+    phoneValidate &&
+    subjectValidate &&
+    messageValidate
+  ) {
+    console.log("Submitting Form");
+  }
 }
 
 function validateName(id, errorDisplayId, itemName) {
@@ -113,6 +153,37 @@ function validateEmail(id, errorDisplayId) {
   return validationStatus;
 }
 
+function validateText(id, errorDisplayId, length, itemName) {
+  var validationStatus = false;
+  const valueInput = document.getElementById(id).value;
+  const valueErrorElement = document.getElementById(errorDisplayId);
 
-function validateText()
+  if (valueInput.length <= length) {
+    valueErrorElement.innerText = `${itemName} is too short.`;
+    valueErrorElement.classList.add("error__message");
+  } else {
+    valueErrorElement.classList.remove("error__message");
+    validationStatus = true;
+  }
+  return validationStatus;
+}
+
+function validatePhone(id, errorDisplayId) {
+  var validationStatus = false;
+  const phoneNumberInput = document.getElementById(id).value;
+  const phoneNumberErrorElement = document.getElementById(errorDisplayId);
+
+  if (phoneNumberInput.length <= 6) {
+    phoneNumberErrorElement.innerText = "Phone number is too short.";
+    phoneNumberErrorElement.classList.add("error__message");
+  } else if (phoneNumberInput.length >= 16) {
+    phoneNumberErrorElement.innerText = "Phone number is too long.";
+    phoneNumberErrorElement.classList.add("error__message");
+  } else {
+    phoneNumberErrorElement.classList.remove("error__message");
+    validationStatus = true;
+  }
+  return validationStatus;
+}
+
 export default formValidator;

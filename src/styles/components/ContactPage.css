@@ -1,6 +1,5 @@
 .contact__container {
   min-height: 100vh;
-  /* padding: 30px 30px; */
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
@@ -108,7 +107,7 @@
   color: var(--primary-text-color);
 }
 .contact__form__label span {
-  color: red;
+  color: #ff8686;
   font-size: 1.2em;
 }
 
@@ -167,4 +166,169 @@
 .error__message {
   opacity: 1 !important;
   color: #ff8686 !important;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .contact__container__left h2 {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+
+  .contact__container__left p {
+    margin-top: 16px;
+    font-family: "Montserrat";
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding-right: 70px;
+    margin-bottom: 16px;
+  }
+
+  .contact__info__container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact__info__container img:nth-of-type(1) {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+  }
+  .contact__info__container img:nth-of-type(2) {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    display: flex;
+    align-self: center;
+  }
+  .contact__info__container div {
+    font-family: "SF Mono";
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+  }
+
+  .contact__socials__container {
+    width: fit-content;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact__socials {
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--main-body-color);
+  }
+
+  .contact__socials img {
+    width: 18px;
+    height: 18px;
+    transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -moz-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -ms-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -o-transition: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .contact__socials:hover img {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+  }
+
+  .contact__container__right {
+    padding: 28px;
+    /* min-height: 50vh; */
+  }
+  .contact__container__right h2 {
+    font-family: "SF Mono";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    margin-bottom: 36px;
+  }
+
+  .contact__form__label {
+    margin-bottom: 6px;
+    font-size: 0.8em;
+    font-family: "Montserrat";
+    letter-spacing: 1px;
+    color: var(--primary-text-color);
+  }
+  .contact__form__label span {
+    color: red;
+    font-size: 1.2em;
+  }
+
+  .contact__container__right input {
+    background-color: var(--main-body-color);
+    outline: none !important;
+    border: none;
+    height: 36px;
+    font-size: 0.9em;
+    font-family: "Montserrat";
+    letter-spacing: 1px;
+    color: var(--primary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+    transition: 600ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -webkit-transition: 600ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -moz-transition: 600ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -ms-transition: 600ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    -o-transition: 600ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .contact__container__right input:focus {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  #Message {
+    height: 60px;
+  }
+  .contact__form__submit__button {
+    margin-top: 60px;
+    background-color: var(--primary-color);
+    width: fit-content;
+    padding: 10px 36px;
+    text-decoration: none;
+    color: var(--main-body-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  /* Error Message */
+  #FirstNameErrorMessage,
+  #LastNameErrorMessage,
+  #EmailErrorMessage,
+  #PhoneErrorMessage,
+  #SubjectErrorMessage,
+  #MessageErrorMessage {
+    opacity: 0;
+    margin-top: 12px;
+    font-family: "SF Mono";
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .error__message {
+    opacity: 1 !important;
+    color: #ff8686 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+}
+
+@media only screen and (min-width: 1401px) {
 }
