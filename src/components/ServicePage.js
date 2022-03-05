@@ -4,7 +4,7 @@ import "../styles/components/ServicePage.css";
 function ServicePage() {
   return (
     <section className="services__container" id="ServicesPage">
-      <h1>My Services</h1>
+      <h2>My Services</h2>
 
       <div className="services__card__container">
         {/* Card One */}
@@ -29,7 +29,7 @@ function ServicePage() {
           <div className="services__card__icon__container">
             <img src="./assets/image/web.svg" alt="Web Developer" />
           </div>
-          <h3>Web Development</h3>
+          <h4>Web Development</h4>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             quia fuga aut perspiciatis magnam, natus voluptatem dolores dolorem
@@ -43,7 +43,7 @@ function ServicePage() {
           <div className="services__card__icon__container">
             <img src="./assets/image/mobile.svg" alt="Mobile Developer" />
           </div>
-          <h3>Mobile Development</h3>
+          <h5>Mobile Development</h5>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             quia fuga aut perspiciatis magnam, natus voluptatem dolores dolorem
@@ -57,7 +57,7 @@ function ServicePage() {
           <div className="services__card__icon__container">
             <img src="./assets/image/encryption.svg" alt="Security Analyst" />
           </div>
-          <h3>Security Analysis</h3>
+          <h6>Security Analysis</h6>
           <p className="services__card__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             quia fuga aut perspiciatis magnam, natus voluptatem dolores dolorem

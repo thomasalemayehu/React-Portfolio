@@ -3,9 +3,9 @@
   padding: 28px 0 100px 28px;
   color: var(--primary-text-color);
 }
-.services__container h1 {
+.services__container h2 {
   font-size: 2em;
-  font-family: "SF Mono";
+  font-family: "SF Mono", serif;
   letter-spacing: 2px;
   color: var(--primary-color);
 }
@@ -39,9 +39,12 @@
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
-.services__card h3 {
+.services__card h3,
+.services__card h4,
+.services__card h5,
+.services__card h6 {
   padding: 10px 24px;
-  font-family: "SF Mono";
+  font-family: "SF Mono", serif;
   letter-spacing: 1px;
   font-weight: bolder;
   font-size: 1.4em;
@@ -83,7 +86,7 @@
 }
 .services__card__text {
   line-height: 1.6;
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
   padding: 10px 24px;
   font-size: 1em;
 }

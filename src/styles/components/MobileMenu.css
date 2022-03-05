@@ -32,7 +32,7 @@
   -o-transform: translateY(0%) !important;
 }
 .mobile__menu__container a {
-  font-family: "Architects Daughter";
+  font-family: "Architects Daughter", sans-serif;
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 1px;

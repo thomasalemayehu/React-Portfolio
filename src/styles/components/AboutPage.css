@@ -36,7 +36,7 @@
 .about__page__right h3 {
   color: var(--primary-color);
   font-size: 2.2em;
-  font-family: "SF Mono";
+  font-family: "SF Mono", serif;
   letter-spacing: 2px;
 }
 .about__page__right p {
@@ -44,7 +44,7 @@
   line-height: 1.6;
   font-size: 1em;
   letter-spacing: 1px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 50px;
 }
 
@@ -74,7 +74,7 @@
 .timeline__title {
   color: var(--primary-color);
   font-weight: bold;
-  font-family: "SF Mono";
+  font-family: "SF Mono", serif;
   font-size: 1.2em;
   letter-spacing: 1px;
   margin-bottom: 5px;
